@@ -1,0 +1,96 @@
+.add-form{
+    border-radius: 34px;
+    background: #faebd7;
+    box-shadow:  5px 5px 10px #998f83,
+                 -5px -5px 10px #ffffff;
+    margin:6px 10px;
+    padding:24px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    min-height:60vh;
+}
+.form-item{
+    margin:12px 0;
+    width:70%;
+    padding:4px;
+    border-radius:10px;
+    background-color: white;
+}
+.form-item label{
+    background-color: lightgray;
+    padding:2px 12px;
+    border-radius:4px;
+}
+.form-item input{
+    font-size:16px;
+    border:none;
+    outline:none;
+    width:70%;
+}
+.category-container-parent{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+.category{
+    position:relative;
+    width:40%;
+}
+.category-dropdown{
+    display:flex;
+    justify-content:space-between;
+    background-color:white; 
+    align-items: center;
+    margin:12px 0px;
+    border-radius: 6px;
+    padding:10px;
+}
+.category-dropdown i{ 
+    display:flex;
+    align-items: center;
+}
+.category-container{
+    display:flex;
+    position:absolute;
+    width:100%;
+    flex-direction:column;
+    background-color: white;
+}
+.category-item{
+    width:98%;
+    display:flex;
+    justify-content:space-between;
+    padding:8px;
+    cursor:pointer;
+}
+.form-add-button{
+    display:flex;
+    justify-content:flex-end;
+}
+.form-add-button div{
+    display:flex;
+    border:1px solid black;
+    padding:2px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.form-add-button div i{
+    margin-left:10px;
+    align-items:center;
+    display:flex;
+}
+@media screen and (max-width:1024px) {
+    .form-item{
+        width:100%;
+    }
+    .form-item input{
+        width:70%;
+    }
+    .amount-input{
+        width:50%  !important;
+    }
+    .category{
+        width:80%;
+    }
+}
